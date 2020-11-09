@@ -1,0 +1,75 @@
+CREATE TABLE public."HOUSE_INFO_STG"
+(
+    "ADDRESS" text COLLATE pg_catalog."default",
+    "BATHROOMS" text COLLATE pg_catalog."default",
+    "BEDROOMS" text COLLATE pg_catalog."default",
+    "PRICE" text COLLATE pg_catalog."default",
+    "SQFT" text COLLATE pg_catalog."default",
+    "LINK" text COLLATE pg_catalog."default",
+    "ZILLOW_ID" text COLLATE pg_catalog."default",
+    "ZESTIMATE" text COLLATE pg_catalog."default",
+    "YEAR_BUILT" text COLLATE pg_catalog."default",
+    "TYPE" text COLLATE pg_catalog."default",
+    "COOLING" text COLLATE pg_catalog."default",
+    "PARKING" text COLLATE pg_catalog."default",
+    "MONTHLY_COST" text COLLATE pg_catalog."default",
+    "PRINCIPAL_INTEREST" text COLLATE pg_catalog."default",
+    "MORTGAGE_INSURANCE" text COLLATE pg_catalog."default",
+    "PROPERTY_TAX" text COLLATE pg_catalog."default",
+    "HOME_INSURANCE" text COLLATE pg_catalog."default",
+    "LATITUDE" text COLLATE pg_catalog."default",
+    "LONGITUDE" text COLLATE pg_catalog."default"
+);
+
+CREATE TABLE public."HOME_SALE_INFO_STG"
+(
+    "ADDRESS" text COLLATE pg_catalog."default",
+    "City" text COLLATE pg_catalog."default",
+    "PostalCode" text COLLATE pg_catalog."default",
+    "ListingId" text COLLATE pg_catalog."default",
+    "MlsStatus" text COLLATE pg_catalog."default",
+    "ListingContractDate" text COLLATE pg_catalog."default",
+    "ListPrice" text COLLATE pg_catalog."default",
+    "LivingArea" text COLLATE pg_catalog."default",
+    "LotSizeArea" text COLLATE pg_catalog."default",
+    "BedroomsTotal" text COLLATE pg_catalog."default",
+    "BathroomsTotal" text COLLATE pg_catalog."default",
+    "CoveredSpaces" text COLLATE pg_catalog."default",
+    "AssociationFee" text COLLATE pg_catalog."default",
+    "Cooling" text COLLATE pg_catalog."default",
+    "Heating" text COLLATE pg_catalog."default",
+    "FireplacesTotal" text COLLATE pg_catalog."default",
+    "AnnualTaxAmount" text COLLATE pg_catalog."default",
+    "PropertySubType" text COLLATE pg_catalog."default",
+    "Levels" text COLLATE pg_catalog."default",
+    "Waterfront" text COLLATE pg_catalog."default",
+    "YearBuilt" text COLLATE pg_catalog."default",
+    latitude text COLLATE pg_catalog."default",
+    "Longitude" text COLLATE pg_catalog."default",
+    "UUID" text COLLATE pg_catalog."default",
+    "RentValue" text COLLATE pg_catalog."default"
+);
+
+CREATE TABLE public."HOUSE_RENTALS_STG"
+(
+    address text COLLATE pg_catalog."default",
+    bathrooms text COLLATE pg_catalog."default",
+    bedrooms text COLLATE pg_catalog."default",
+    price text COLLATE pg_catalog."default",
+    sqft text COLLATE pg_catalog."default",
+    url text COLLATE pg_catalog."default",
+    id text COLLATE pg_catalog."default",
+    zestimate text COLLATE pg_catalog."default",
+    type text COLLATE pg_catalog."default",
+    cooling text COLLATE pg_catalog."default",
+    heating text COLLATE pg_catalog."default",
+    pets text COLLATE pg_catalog."default",
+    laundry text COLLATE pg_catalog."default",
+    parking text COLLATE pg_catalog."default",
+    deposit text COLLATE pg_catalog."default",
+    "price/sqt" text COLLATE pg_catalog."default",
+    walk_score text COLLATE pg_catalog."default",
+    transit_score text COLLATE pg_catalog."default",
+    latitude text COLLATE pg_catalog."default",
+    longitude text COLLATE pg_catalog."default"
+);
