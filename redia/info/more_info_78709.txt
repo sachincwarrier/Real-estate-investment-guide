@@ -1,0 +1,11 @@
+3 bds3 ba2,371 sqft
+3 bds3 ba2,276 sqft
+4 bds3 ba2,331 sqft
+5 bds4 ba3,024 sqft
+8 bds11 ba12,412 sqft
+3 bds2 ba1,571 sqft
+5 bds3 ba2,658 sqft
+3 bds2 ba1,953 sqft
+3 bds3 ba1,804 sqft
+4 bds2 ba1,426 sqft
+Studio-- ba1,818 sqft

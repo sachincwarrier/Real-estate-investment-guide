@@ -1,0 +1,41 @@
+4 bds2 ba2,467 sqft
+4 bds3 ba2,142 sqft
+3 bds3 ba1,467 sqft
+4 bds2 ba1,737 sqft
+3 bds3 ba2,127 sqft
+3 bds2 ba1,194 sqft
+3 bds3 ba1,779 sqft
+4 bds2 ba1,863 sqft
+5,488 sqft lot
+-- bds2 ba1,172 sqft
+3 bds2 ba1,672 sqft
+3 bds2 ba1,472 sqft
+3 bds2 ba1,267 sqft
+4 bds3 ba2,160 sqft
+3 bds3 ba2,076 sqft
+4 bds3 ba2,144 sqft
+3 bds2 ba1,373 sqft
+6,446 sqft lot
+4 bds3 ba2,024 sqft
+5,314 sqft lot
+3 bds2 ba1,395 sqft
+3 bds3 ba1,987 sqft
+4 bds2 ba1,698 sqft
+5 bds3 ba2,656 sqft
+6,359 sqft lot
+3 bds3 ba1,569 sqft
+3 bds3 ba2,113 sqft
+4 bds2 ba2,025 sqft
+4 bds3 ba2,320 sqft
+3 bds2 ba1,514 sqft
+3 bds2 ba1,512 sqft
+5 bds3 ba2,656 sqft
+3 bds3 ba1,921 sqft
+3 bds2 ba1,514 sqft
+4 bds2 ba1,992 sqft
+4 bds3 ba2,024 sqft
+3 bds2 ba1,709 sqft
+3 bds2 ba1,338 sqft
+3 bds3 ba1,793 sqft
+4 bds3 ba2,144 sqft
+4 bds3 ba2,277 sqft

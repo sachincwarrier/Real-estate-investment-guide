@@ -1,0 +1,40 @@
+4 bds3 ba2,093 sqft
+2 bds1 ba1,008 sqft
+4 bds2 ba1,990 sqft
+4 bds2 ba2,111 sqft
+3 bds1 ba1,246 sqft
+5 bds3 ba3,105 sqft
+3 bds2 ba1,330 sqft
+3 bds2 ba1,172 sqft
+3 bds2 ba959 sqft
+6.42 acres lot
+Studio-- ba1,784 sqft
+2 bds1 ba1,004 sqft
+3 bds3 ba2,558 sqft
+4 bds3 ba2,730 sqft
+4 bds3 ba2,558 sqft
+3 bds3 ba2,766 sqft
+7 bds4 ba3,525 sqft
+Studio-- ba1,914 sqft
+2 bds2 ba1,581 sqft
+3 bds2 ba1,732 sqft
+4 bds2 ba1,560 sqft
+4 bds3 ba1,992 sqft
+4 bds4 ba2,720 sqft
+3 bds2 ba1,452 sqft
+-- bds2.5 ba1,992 sqft
+3 bds3 ba1,442 sqft
+3 bds1.5 ba1,266 sqft
+3 bds2 ba1,266 sqft
+4 bds4 ba2,501 sqft
+2 bds1 ba1,004 sqft
+3 bds3 ba1,650 sqft
+2 bds3 ba1,495 sqft
+4 bds3 ba2,501 sqft
+4 bds2 ba1,627 sqft
+3 bds2 ba1,152 sqft
+4 bds3 ba1,950 sqft
+3 bds3 ba2,629 sqft
+3 bds2 ba1,912 sqft
+3 bds3 ba2,047 sqft
+1.2 acres lot

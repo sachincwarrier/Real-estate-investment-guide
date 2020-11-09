@@ -1,0 +1,36 @@
+4 bds3 ba2,300 sqft
+3 bds2 ba2,340 sqft
+3 bds3 ba2,415 sqft
+3 bds2 ba1,204 sqft
+3 bds3 ba1,408 sqft
+3 bds2 ba1,409 sqft
+4 bds1 ba1,430 sqft
+3 bds3 ba1,468 sqft
+2 bds3 ba1,121 sqft
+2 bds2 ba908 sqft
+2 bds3 ba1,320 sqft
+3 bds2 ba1,498 sqft
+3 bds2 ba1,710 sqft
+3 bds3 ba1,986 sqft
+3 bds2 ba2,147 sqft
+1 bd1 ba680 sqft
+3 bds2 ba1,754 sqft
+3 bds3 ba1,844 sqft
+3 bds3 ba1,755 sqft
+3 bds3 ba1,480 sqft
+3 bds2 ba1,648 sqft
+3 bds1 ba910 sqft
+3 bds2 ba1,648 sqft
+3 bds2 ba1,686 sqft
+3,115 sqft lot
+0.53 acres lot
+3,494 sqft lot
+3 bds2 ba1,055 sqft
+-- bds3 ba1,796 sqft
+2 bds3 ba1,097 sqft
+3 bds3 ba1,828 sqft
+3 bds3 ba1,922 sqft
+3 bds3 ba2,064 sqft
+2 bds2 ba1,054 sqft
+2 bds2 ba1,054 sqft
+2 bds2 ba904 sqft

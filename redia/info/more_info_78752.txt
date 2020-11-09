@@ -1,0 +1,22 @@
+4 bds4 ba2,264 sqft
+3 bds1 ba900 sqft
+2 bds1 ba680 sqft
+3 bds3 ba1,788 sqft
+1 bd1 ba862 sqft
+1 bd1 ba610 sqft
+2 bds2 ba1,100 sqft
+3 bds3 ba1,390 sqft
+3 bds3 ba1,601 sqft
+2 bds1 ba754 sqft
+2 bds1 ba1,632 sqft
+2 bds3 ba1,657 sqft
+Studio-- ba3,028 sqft
+1 bd2 ba728 sqft
+2 bds3 ba1,318 sqft
+3 bds3 ba2,083 sqft
+3 bds3 ba1,624 sqft
+2 bds3 ba966 sqft
+3 bds3 ba1,820 sqft
+2 bds3 ba2,111 sqft
+6,838 sqft lot
+3 bds3 ba1,267 sqft

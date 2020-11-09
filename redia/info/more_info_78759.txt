@@ -1,0 +1,17 @@
+4 bds2 ba1,600 sqft
+3 bds3 ba1,876 sqft
+4 bds4 ba3,840 sqft
+5 bds4 ba3,141 sqft
+3 bds3 ba1,678 sqft
+4 bds4 ba3,450 sqft
+3 bds5 ba2,610 sqft
+2 bds2 ba1,248 sqft
+3 bds2 ba1,637 sqft
+2 bds2 ba1,183 sqft
+1.92 acres lot
+3 bds4 ba3,197 sqft
+0.32 acres lot
+-- bds1 ba598 sqft
+4 bds3 ba2,559 sqft
+2 bds2 ba1,490 sqft
+5 bds4 ba3,823 sqft

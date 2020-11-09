@@ -1,0 +1,19 @@
+4 bds3 ba2,444 sqft
+3 bds2 ba1,153 sqft
+4 bds3 ba2,648 sqft
+4 bds3 ba1,375 sqft
+3 bds3 ba1,186 sqft
+3 bds1 ba1,125 sqft
+2 bds2 ba1,328 sqft
+5 bds3 ba3,017 sqft
+3 bds2 ba1,660 sqft
+0.28 acres lot
+Studio-- ba1,452 sqft
+3 bds1 ba922 sqft
+1 bd2 ba1,126 sqft
+0.29 acres lot
+3 bds3 ba2,244 sqft
+0.52 acres lot
+4 bds2 ba1,660 sqft
+0.29 acres lot
+0.7 acres lot

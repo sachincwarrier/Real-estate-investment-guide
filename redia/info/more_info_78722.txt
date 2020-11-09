@@ -1,0 +1,9 @@
+4 bds4 ba2,198 sqft
+3 bds2 ba2,200 sqft
+Studio1 ba407 sqft
+2 bds1 ba1,152 sqft
+3 bds5 ba2,900 sqft
+1 bd1 ba700 sqft
+3 bds2 ba1,575 sqft
+1 bd1 ba700 sqft
+3 bds3 ba1,055 sqft
