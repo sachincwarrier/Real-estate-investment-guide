@@ -1,0 +1,37 @@
+version: "3.7"
+services:
+  
+  redia-postgres:
+    build: ./redia/db
+    container_name: redia-postgres
+    volumes:
+      - redia-data:/var/lib/postgresql/data
+    ports:
+      - 5555:5432
+    environment:
+      - POSTGRES_DB=redia
+      - POSTGRES_USER=redia
+      - POSTGRES_PASSWORD=redia2020
+
+  redia-api:
+    build: ./api/python-flask-server
+    container_name: redia-api
+    environment:
+      - DB_SERVER=redia-postgres
+      - POSTGRES_DB=redia
+      - POSTGRES_USER=redia
+      - POSTGRES_PASSWORD=redia2020
+    ports:
+      - 8080:8080
+    links:
+      - redia-postgres
+
+  redia-ui:
+    build: ./frontend
+    container_name: redia-ui
+    ports:
+      - 80:80
+    links:
+      - redia-api
+volumes:
+  redia-data:

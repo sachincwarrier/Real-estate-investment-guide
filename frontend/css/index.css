@@ -1,0 +1,271 @@
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f6e6e;
+
+}
+#nav {
+    margin: 0.2em 0.2em 0.2em 0.4em;
+    display: flex;
+}
+#logo {
+    content: url('../images/logo.png');
+    margin-right: 4em;
+}
+#searchMenu {
+    display: flex;
+    flex-direction: row;
+}
+#searchMenu > div {
+    position: relative;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#mapid {
+    z-index: 1;
+    background: #ccc;
+}
+#modalDisplay {
+    z-index: 100; /* Sit on top */
+    display: flex;
+    flex-wrap: wrap;
+}
+#modalDisplay > div {
+    display: block;
+}
+#propDetails {
+    text-align: center;
+}
+#propDetails > div {
+    margin: 0.1em;
+    padding: 0.1em;
+}
+#propImage {
+    position: relative;
+}
+#showImage {
+    width: 100%;
+    height: 80%;
+}
+#prevImage, #nextImage {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #efeeee;
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: transparent;
+    border: 0px;
+    z-index: 100;
+  }
+#nextImage {
+    border-radius: 3px 0 0 3px;
+    right: 0%;
+}
+/* On hover, add a black background color with a little bit see-through */
+#prevImage:hover, #nextImage:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.ui-widget-header {
+    background-color: #4e4e4e;
+    background-image: none;
+}
+.ui-button{
+    font-size: 1em;
+    background-color: #4e4e4e;
+    background-image: none;
+    border: 0px;
+}
+.ui-dialog {
+    position: relative;
+    border: 0;
+    background: white;
+    padding: 0;
+    overflow: auto;
+}
+.ui-dialog-content {
+    position: relative;
+    border: 0;
+    background: none;
+    overflow: auto;
+}
+.ui-corner-all {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#propAnalysis {
+    text-align: center;
+}
+#propAnalysis > div {
+    margin: 0.2em;
+    padding: 0.2em;
+}
+#finance {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#financeSwitch {
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 1.6em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#financeSwitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.5em;
+    left: 0.05em;
+    bottom: 0.05em;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #ccc;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(1.4em);
+    -ms-transform: translateX(1.4em);
+    transform: translateX(1.4em);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 3em;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+#priceButton {
+    height: 100%;
+    width: auto;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f6e6e;
+}
+input[type=number] {
+    border: 0px;
+    -moz-appearance: textfield;
+    border-bottom-width: 1px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#finance {
+    font-size: large;
+    font-weight: bold;
+    color: #6f6e6e;
+}
+#imgTracker {
+    justify-content: center;
+    display: flex;
+}
+#imgTracker > label {
+    height: 100%;
+}
+#cashButton {
+    height: 100%;
+    width: auto;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f6e6e;
+}
+#line {
+    background-color: #e4e4e4;
+    height: 2px;
+    margin-left: 4em;
+    margin-right: 4em;
+    border-style: none;
+}
+#analysisButtons {
+    display: flex;
+    justify-content: center;
+}
+#analysisButtons > div {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: medium;
+    text-align: center;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#analysisButtons > div > h4 {
+    margin-top: 0.4em;
+}
+#interestRate {
+    height: 100%;
+    width: auto;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f6e6e;
+    margin-right: 2em;
+}
+#mortTerm {
+    height: 100%;
+    width: auto;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f6e6e;
+}
+#interestButton {
+    width: 6em;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6f6e6e;
+    font-size: medium;
+    text-align: center;
+}
+#termButton {
+    width: 6em;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6f6e6e;
+    font-size: medium;
+    text-align: center;
+}

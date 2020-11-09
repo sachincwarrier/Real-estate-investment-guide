@@ -1,0 +1,355 @@
+---
+swagger: "2.0"
+info:
+  description: "Redia"
+  version: "1.0.0"
+  title: "Redia"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "TBD"
+basePath: "/v1"
+tags:
+- name: "properties"
+  description: "Everything about Properties"
+schemes:
+- "https"
+- "http"
+paths:
+  /properties:
+    get:
+      tags:
+      - "properties"
+      summary: "Get all properties"
+      description: "Get basic information about all properties in the database."
+      operationId: "get_all_properties"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "finance"
+        in: "query"
+        description: "Whether the property would be financed or not."
+        required: false
+        type: "boolean"
+      - name: "cashDown"
+        in: "query"
+        description: "How much cash is available as down payment."
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "maxPrice"
+        in: "query"
+        description: "Search only for properties below this price"
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "minPrice"
+        in: "query"
+        description: "Search only for properties above this price"
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "propertyType"
+        in: "query"
+        description: "Search only for this property type."
+        required: false
+        type: "string"
+        enum:
+        - "House"
+        - "Condo"
+        - "Multi"
+      - name: "bedrooms"
+        in: "query"
+        description: "Limit to houses with bedrooms above this number."
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "bathrooms"
+        in: "query"
+        description: "Limit to houses with bathrooms above this number."
+        required: false
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "OK"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Property"
+        "404":
+          description: "No properties found"
+      security: []
+      x-swagger-router-controller: "swagger_server.controllers.properties_controller"
+  /properties/findByZipCode/{zipcode}:
+    get:
+      tags:
+      - "properties"
+      summary: "Find Properties by Zip Code"
+      description: "Multiple values can be provided with comma separated strings"
+      operationId: "find_properties_by_zip_code"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "zipcode"
+        in: "path"
+        description: "Zip code value that need to be considered for filter"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "finance"
+        in: "query"
+        description: "Whether the property would be financed or not."
+        required: false
+        type: "boolean"
+      - name: "cashDown"
+        in: "query"
+        description: "How much cash is available as down payment."
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "maxPrice"
+        in: "query"
+        description: "Search only for properties below this price"
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "minPrice"
+        in: "query"
+        description: "Search only for properties above this price"
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "propertyType"
+        in: "query"
+        description: "Search only for this property type."
+        required: false
+        type: "string"
+        enum:
+        - "House"
+        - "Condo"
+        - "Multi"
+      - name: "bedrooms"
+        in: "query"
+        description: "Limit to houses with bedrooms above this number."
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "bathrooms"
+        in: "query"
+        description: "Limit to houses with bathrooms above this number."
+        required: false
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Property"
+        "400":
+          description: "Invalid status value"
+        "404":
+          description: "No properties found"
+      security: []
+      x-swagger-router-controller: "swagger_server.controllers.properties_controller"
+  /properties/details/{propertyID}:
+    get:
+      tags:
+      - "properties"
+      summary: "Return details of property by ID"
+      description: "Returns additional information about property"
+      operationId: "get_details_by_id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "propertyID"
+        in: "path"
+        description: "ID of property to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Details"
+        "400":
+          description: "Invalid ID supplied"
+        "404":
+          description: "Property not found"
+      security: []
+      x-swagger-router-controller: "swagger_server.controllers.properties_controller"
+  /properties/analysis/{propertyID}:
+    get:
+      tags:
+      - "properties"
+      summary: "Return analysis of property by ID"
+      description: "Returns additional information about property"
+      operationId: "get_analysis_by_id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "propertyID"
+        in: "path"
+        description: "ID of property to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "finance"
+        in: "query"
+        description: "Whether the property would be financed or not."
+        required: false
+        type: "boolean"
+      - name: "cashDown"
+        in: "query"
+        description: "How much cash is available as down payment."
+        required: false
+        type: "integer"
+        format: "int64"
+      - name: "interestRate"
+        in: "query"
+        description: "What interest rate to calculate the mortgage with."
+        required: false
+        type: "number"
+        format: "float"
+      - name: "term"
+        in: "query"
+        description: "What mortgage term to calculate the mortgage with."
+        required: false
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Analysis"
+        "400":
+          description: "Invalid ID supplied"
+        "404":
+          description: "Property not found"
+      security: []
+      x-swagger-router-controller: "swagger_server.controllers.properties_controller"
+definitions:
+  Property:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      score:
+        type: "integer"
+        format: "int32"
+      price:
+        type: "number"
+        format: "float"
+      lattitude:
+        type: "number"
+        format: "float"
+      longitude:
+        type: "number"
+        format: "float"
+      address:
+        type: "string"
+      type:
+        type: "string"
+        enum:
+        - "House"
+        - "Condo"
+        - "Multi"
+    xml:
+      name: "Order"
+    example:
+      score: 6
+      address: "address"
+      lattitude: 5.962134
+      price: 1.4658129
+      id: 0
+      type: "House"
+      longitude: 5.637377
+  Details:
+    type: "object"
+    properties:
+      price:
+        type: "number"
+        format: "float"
+      bed:
+        type: "integer"
+        format: "int32"
+      bath:
+        type: "integer"
+        format: "int32"
+      area:
+        type: "integer"
+        format: "int32"
+      year:
+        type: "integer"
+        format: "int32"
+      school:
+        type: "integer"
+        format: "int32"
+      parking:
+        type: "integer"
+        format: "int32"
+    example:
+      bed: 6
+      area: 5
+      parking: 7
+      year: 5
+      school: 2
+      price: 0.8008282
+      bath: 1
+  Analysis:
+    type: "object"
+    properties:
+      income:
+        type: "number"
+        format: "float"
+      price:
+        type: "number"
+        format: "float"
+      rent:
+        type: "number"
+        format: "float"
+      taxes:
+        type: "number"
+        format: "float"
+      mortgate:
+        type: "number"
+        format: "float"
+      insurance:
+        type: "number"
+        format: "float"
+      repair:
+        type: "number"
+        format: "float"
+      homeowners:
+        type: "number"
+        format: "float"
+      returnCash:
+        type: "number"
+        format: "float"
+      returnMortgage:
+        type: "number"
+        format: "float"
+      capRate:
+        type: "number"
+        format: "float"
+    xml:
+      name: "Order"
+    example:
+      income: 0.8008282
+      mortgate: 5.637377
+      insurance: 2.302136
+      repair: 7.0614014
+      capRate: 4.145608
+      returnMortgage: 2.027123
+      price: 6.0274563
+      taxes: 5.962134
+      rent: 1.4658129
+      homeowners: 9.301444
+      returnCash: 3.6160767
